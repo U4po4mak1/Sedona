@@ -2,6 +2,7 @@
 
 * Студент: [{{userName}}]({{userProfile}}).
 * Наставник: `Димаруша`.
+* Мой сайт: https://u4po4mak1.github.io/Sedona/
 
 ---
 
