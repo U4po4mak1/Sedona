@@ -52,13 +52,9 @@
           <h1 class="sedona_hotels_title">Гостиницы Седоны</h1>
           <ul class="breadcrubs_list">
             <li class="breadcrubs_item">
-              <a href="index.html" class="home_icon"><img src="/images/Icons/home.svg" alt="домой">Дом</a>
+              <a href="index.html" class="home_icon">Главная<img src="/images/Icons/home.svg" alt="домой"></a>
             </li>
-            <li class="breadcrubs_item"><a href="#" class="arrow_icon"><img src="images/Icons/arrow.svg"
-                  alt="стрелка">стрелка</a>
-            </li>
-            <li class="breadcrubs_item"><a href="#" class="hotels_link"><span
-                  class="breadcrubs_hotels">Гостиницы</span></a>
+            <li class="breadcrubs_item"><a href="#" class="hotels_link">Гостиницы</a>
             </li>
           </ul>
 
@@ -103,20 +99,21 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="price">
-                <ul class="price_list">
-                  <li class="price_item">
-                    <h4><span class="price_text">Стоимость, ₽:</span></h4>
-                  </li>
-                  <li class="price_item"><label><input type="number" name="price" min="0" value="0"
-                        placeholder="от"></label>
-                    <label><input type="number" name="price" max="9000" value="9000" placeholder="до">
-                    </label>
-                  </li>
-                  <li class="price_item"><label><input type="range" min="0" max="9000" step="100">
-                    </label>
-                  </li>
-                </ul>
+              <div class="hotel_price">
+                <fieldset class="hotel_price_field">
+                  <legend class="hotel_price_title">Стоимость, ₽:</legend>
+                  <ul class="hotel_price_list">
+                    <li class="hotel_price_item"><label><input type="number" name="price" min="0" value="0"
+                          placeholder="от"></label>
+                      <label><input type="number" name="price" max="9000" value="9000" placeholder="до">
+                      </label>
+                    </li>
+                    <li class="hotel_price_item"><label><input type="range" min="0" max="9000" step="100">
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+
               </div>
               <div class="Hotel_buttons">
                 <ul class="hotel_buttons_list">
