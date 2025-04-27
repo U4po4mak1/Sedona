@@ -11,35 +11,36 @@
 
     <header class="main_header">
       <nav class="navigation">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="логотип">
+        </a>
         <ul class="navigation_list">
           <li class="navigation_item">
-            <a href="index.html">
-              <img src="images/logo.svg" alt="логотип">
-            </a>
-          </li>
-          <li class="navigation_item">
-            <a href="index.html" class="navigation_link">Главная</a>
+            <a href="#" class="navigation_link">Главная</a>
           </li>
           <li class="navigation_item">
             <a href="#" class="navigation_link">О седоне</a>
           </li>
           <li class="navigation_item">
-            <a href="#" class="navigation_link">Гостиницы</a>
+            <a href="Catalog.html" class="navigation_link">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation_icons_list">
           <li class="navigation_icon_item">
             <a href="#" class="navigation_icon_link">
               <img src="images/Icons/search.svg" alt="Поиск">
+              <span class="visually_hidden">Поиск</span>
             </a>
           </li>
           <li>
             <a href="#" class="navigation_icon_link">
               <img src="images/Icons/heart.svg" alt="Лайк">
+              <span class="visually_hidden">Избранное</span>
+              <span class="like_count">12</span>
             </a>
           </li>
           <li>
-            <a href="#" class="navigation_icon_button">Хочу сюда</a>
+            <a href="Catalog.html" class="navigation_icon_button">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -47,7 +48,6 @@
 
     <main>
       <div class="wrapper">
-
         <section class="sedona_hotels_search">
           <h1 class="sedona_hotels_title">Гостиницы Седоны</h1>
           <ul class="breadcrubs_list">
@@ -210,7 +210,7 @@
                 </svg>
                 <span>Рейтинг: 9,2</span>
               </li>
-              <li class="hotel_card_item"><img src="/images/Desert_Quail.jpg" alt="ущелье с видом на небо"></li>
+              <li class="hotel_card_item"><img src="images/Desert_Quail.jpg" alt="ущелье с видом на небо"></li>
               <li class="hotel_card_item">
                 <p>Гостиница <span>От 2500 ₽</span></p>
               </li>
@@ -233,9 +233,9 @@
               <li class="hotel_card_item"><img src="images/Gentree.jpg" alt="ущелье с видом на небо">
               </li>
               <li class="hotel_card_item">
-                <p>Гостиница <span>От 1500</span>
-                    <a href="#" class="hotel_about">подробнее</a>
-                    <button type="submit">в избранное</button>
+                <p>Гостиница <span>От 1500</span></p>
+                  <a href="#" class="hotel_about">подробнее</a>
+                  <button type="submit">в избранное</button>
               </li>
               <li class="hotel_rating">
                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +278,8 @@
             <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
             <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <label for="subscribe_form"></label><input type="email" name="subscribe_mail" placeholder="Ваш e-mail" id="subscribe_form">
+              <label for="subscribe_form"></label><input type="email" name="subscribe_mail" placeholder="Ваш e-mail"
+                id="subscribe_form">
               <button type="submit">Подписаться</button>
             </form>
           </div>
@@ -308,7 +309,7 @@
           <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
         </li>
         <li class="footer_item">
-          <a href="#" class="html_logo_link"><img src="/images/Icons/HTML_Academy_logo.svg"
+          <a href="#" class="html_logo_link"><img src="images/Icons/HTML_Academy_logo.svg"
               alt="Логотип HTML Академии"></a>
         </li>
       </ul>
