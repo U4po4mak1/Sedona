@@ -35,7 +35,7 @@
           <li>
             <a href="#" class="navigation_icon_link">
               <img src="images/Icons/heart.svg" alt="Лайк">
-              <span class="visually_hidden">Избранное</span>
+              <span class="visually_hidden">Отелей в избранном</span>
               <span class="like_count">12</span>
             </a>
           </li>
@@ -103,17 +103,17 @@
                 <fieldset class="hotel_price_field">
                   <legend class="hotel_price_title">Стоимость, ₽:</legend>
                   <ul class="hotel_price_list">
-                    <li class="hotel_price_item"><label><input type="number" name="price" min="0" value="0"
-                          placeholder="от"></label>
-                      <label><input type="number" name="price" max="9000" value="9000" placeholder="до">
-                      </label>
+                    <li class="hotel_price_item">
+                      <label for="price_min">от</label>
+                      <input type="number" name="price_min" id="price_min" value="0">
+                      <label for="price_max">до</label>
+                      <input type="number" name="price_max" id="price_max" max="9000" value="9000">
                     </li>
                     <li class="hotel_price_item"><label><input type="range" min="0" max="9000" step="100">
                       </label>
                     </li>
                   </ul>
                 </fieldset>
-
               </div>
               <div class="Hotel_buttons">
                 <ul class="hotel_buttons_list">
@@ -130,19 +130,22 @@
         <section class="search_result">
           <h2 class="visually_hidden">Результаты поиска</h2>
           <div class="search_result_list">
-            <span class="search_title">Найдено гостиниц: 38</span>
+            <h2 class="search_title">Найдено гостиниц: 38</h2>
             <label for="hotel_price_select"></label><select name="filter" id="hotel_price_select" class="hotel_filter">
               <option value="poor_first">Сначала дешевые</option>
               <option value="cheap_first">Сначала дорогие</option>
             </select>
-            <a href="#" class="button_vision">
+            <a href="/catalog.html?view=tile" class="button_table_vision">
               <img src="/images/Catalog_icons/table_bision.svg" alt="Вывести таблицей" class="table_sheet_icon">
+              <span class="visually_hidden">Вывести таблицей</span>
             </a>
-            <a href="#" class="button_computer">
-              <img src="/images/Catalog_icons/computer.svg" alt="Одной страницей" class="one_sheet_vision">
+            <a href="/catalog.html?view=card" class="button_computer">
+              <img src="/images/Catalog_icons/computer.svg" alt="Вывести с описанием" class="one_sheet_vision">
+              <span class="visually_hidden">Вывести с описанием</span>
             </a>
-            <a href="#" class="button_list"><img src="/images/Catalog_icons/list.svg" alt="Вывести списком"
-                class="one_list_vision">
+            <a href="/catalog.html?view=list" class="button_list"><img src="/images/Catalog_icons/list.svg"
+                alt="Вывести списком" class="one_list_vision">
+              <span class="visually_hidden">Вывести списком</span>
             </a>
           </div>
         </section>
@@ -151,68 +154,70 @@
           <h2 class="visually_hidden">Каталог отелей</h2>
           <div class="hotel_cards">
             <ul class="hotel_cards_list">
-              <li class="hotel_card_item"><img src="/images/hotel_Amara_Resort.jpg" alt="ущелье с видом на небо"></li>
               <li class="hotel_card_item">
-                <p>Гостиница <span>От 4000 ₽</span></p>
-              </li>
-              <li class="hotel_card_item">
+                <img src="/images/hotel_Amara_Resort.jpg" alt="ущелье с видом на небо">
+                <h3 class="hotel_card_item_title">Amara Resort & Spa</h3>
+                <p class="hotel_card_item_type"></p>Гостиница</p>
+                <p class="hotel_card_item_price">От 4000 ₽</p>
                 <a href="#" class="hotel_about">подробнее</a>
-                <button type="submit">в избранное</button>
-              </li>
-              <li class="hotel_rating">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <span>Рейтинг: 8,5</span>
-              </li>
-              <li class="hotel_card_item"><img src="/images/Villas_at_Poco.jpg" alt="ущелье с видом на небо"></li>
-              <li class="hotel_card_item">
-                <p>Гостиница <span>От 5000 ₽</span></p>
+                <button type="button">в избранное</button>
+                <div class="hotel_card_item_stars">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                </div>
+                <p class="hotel_rating_number">Рейтинг: 8,5</p>
               </li>
               <li class="hotel_card_item">
+                <img src="/images/Villas_at_Poco.jpg" alt="горы с радугой">
+                <h3 class="hotel_card_item_title">Villas at Poco Diablo</h3>
+                <p class="hotel_card_item_type"></p>Гостиница</p>
+                <p class="hotel_card_item_price">От 5000 ₽</p>
                 <a href="#" class="hotel_about">подробнее</a>
-                <button type="submit">в избранное</button>
-              </li>
-              <li class="hotel_rating">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <span>Рейтинг: 9,2</span>
-              </li>
-              <li class="hotel_card_item"><img src="/images/Desert_Quail.jpg" alt="ущелье с видом на небо"></li>
-              <li class="hotel_card_item">
-                <p>Гостиница <span>От 2500 ₽</span></p>
+                <button type="button">в избранное</button>
+                <div class="hotel_card_item_stars">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                </div>
+                <p class="hotel_rating_number">Рейтинг: 9,2</p>
               </li>
               <li class="hotel_card_item">
+                <img src="/images/Desert_Quail.jpg" alt="горы днём">
+                <h3 class="hotel_card_item_title">Desert Quail Inn</h3>
+                <p class="hotel_card_item_type"></p>Гостиница</p>
+                <p class="hotel_card_item_price">От 2500 ₽</p>
                 <a href="#" class="hotel_about">подробнее</a>
-                <button type="submit">в избранное</button>
-              </li>
-              <li class="hotel_rating">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <span>Рейтинг: 6,9</span>
-              </li>
-              <li class="hotel_card_item"><img src="/images/Gentree.jpg" alt="ущелье с видом на небо">
+                <button type="button">в избранное</button>
+                <div class="hotel_card_item_stars">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                </div>
+                <p class="hotel_rating_number">Рейтинг: 6,9</p>
               </li>
               <li class="hotel_card_item">
-                <p>Гостиница <span>От 1500</span></p>
+                <img src="/images/Gentree.jpg" alt="горы ночью с видом на небо">
+                <h3 class="hotel_card_item_title">GreenTree Inn</h3>
+                <p class="hotel_card_item_type"></p>Гостиница</p>
+                <p class="hotel_card_item_price">От 1500 ₽</p>
                 <a href="#" class="hotel_about">подробнее</a>
-                <button type="submit">в избранное</button>
-              </li>
-              <li class="hotel_rating">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
-                <span>Рейтинг: 5,0</span>
+                <button type="button">в избранное</button>
+                <div class="hotel_card_item_stars">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                  <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
+                </div>
+                <p class="hotel_rating_number">Рейтинг: 6,9</p>
               </li>
             </ul>
           </div>
+
           <div class="pagination">
             <ul class="pagination_list">
               <li class="pagination_item">
-                <a href="#" class="pagination_link">1</a>
+                <a href="#" class="pagination_link pagination_current" aria-current="page">1</a>
               </li>
               <li class="pagination_item">
                 <a href="#" class="pagination_link">2</a>
