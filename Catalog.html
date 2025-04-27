@@ -122,9 +122,10 @@
         </section>
 
         <section class="search_result">
+          <h2 class="visually_hidden">Результаты поиска</h2>
           <div class="search_result_list">
             <span class="search_title">Найдено гостиниц: 38</span>
-            <select name="filter" id="" class="hotel_filter">
+            <label for="hotel_price_select"></label><select name="filter" id="hotel_price_select" class="hotel_filter">
               <option value="poor_first">Сначала дешевые</option>
               <option value="cheap_first">Сначала дорогие</option>
             </select>
@@ -160,10 +161,10 @@
         </section>
 
         <section class="hotels_catalog">
+          <h2 class="visually_hidden">Каталог отелей</h2>
           <div class="hotel_cards">
             <ul class="hotel_cards_list">
-              <li class="hotel_card_item"><img src="images/hotel Amara Resort.jpg"
-                  alt="ущелье с видом на небо"></li>
+              <li class="hotel_card_item"><img src="images/hotel_Amara_Resort.jpg" alt="ущелье с видом на небо"></li>
               <li class="hotel_card_item">
                 <p>Гостиница <span>От 4000 ₽</span></p>
               </li>
@@ -186,8 +187,7 @@
                 </svg>
                 <span>Рейтинг: 8,5</span>
               </li>
-              <li class="hotel_card_item"><img src="images/Villas at Poco.jpg"
-                  alt="ущелье с видом на небо"></li>
+              <li class="hotel_card_item"><img src="images/Villas_at_Poco.jpg" alt="ущелье с видом на небо"></li>
               <li class="hotel_card_item">
                 <p>Гостиница <span>От 5000 ₽</span></p>
               </li>
@@ -210,8 +210,7 @@
                 </svg>
                 <span>Рейтинг: 9,2</span>
               </li>
-              <li class="hotel_card_item"><img src="images/Desert Quail.jpg"
-                  alt="ущелье с видом на небо"></li>
+              <li class="hotel_card_item"><img src="/images/Desert_Quail.jpg" alt="ущелье с видом на небо"></li>
               <li class="hotel_card_item">
                 <p>Гостиница <span>От 2500 ₽</span></p>
               </li>
@@ -234,7 +233,7 @@
               <li class="hotel_card_item"><img src="images/Gentree.jpg" alt="ущелье с видом на небо">
               </li>
               <li class="hotel_card_item">
-                <p>Гостиница <span>От 1500
+                <p>Гостиница <span>От 1500</span>
                     <a href="#" class="hotel_about">подробнее</a>
                     <button type="submit">в избранное</button>
               </li>
@@ -278,8 +277,8 @@
           <div class="subscribe_item">
             <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
             <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form action="" method="post">
-              <input type="email" name="subscribe_mail" placeholder="Ваш e-mail" id="">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <label for="subscribe_form"></label><input type="email" name="subscribe_mail" placeholder="Ваш e-mail" id="subscribe_form">
               <button type="submit">Подписаться</button>
             </form>
           </div>
@@ -309,7 +308,7 @@
           <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
         </li>
         <li class="footer_item">
-          <a href="#" class="html_logo_link"><img src="images/Icons/HTML Academy_logo.svg"
+          <a href="#" class="html_logo_link"><img src="/images/Icons/HTML_Academy_logo.svg"
               alt="Логотип HTML Академии"></a>
         </li>
       </ul>

@@ -103,30 +103,31 @@
           <h2 class="products_header_title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="products_header_text">Опытный персонал и качественное обслуживание!</p>
         </div>
-        <ul class="products_list">
-          <li class="products_item">
-            <div class="products_item_blue">
-              <img src="images/Icons/house.svg" alt="" class="products_icon">
-              <h3 class="products_title">Жильё</h3>
-              <p class="products_text">Рекомендуем пожить в настоящем мотеле,
-                всё как в кино!</p>
-            </div>
-          </li>
-          <li class="products_item">
-            <div class="products_item_white">
-              <img src="images/Icons/food.svg" alt="" class="products_icon">
-              <h3 class="products_title">Еда</h3>
-              <p class="products_text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-          </li>
-          <li class="products_item">
-            <div class="products_item_blue">
-              <img src="images/Icons/present.svg" alt="" class="products_icon">
-              <h3 class="products_title">Сувениры</h3>
-              <p class="products_text">Не только китайского, но и настоящего местного производства!</p>
-            </div>
-          </li>
-        </ul>
+        <div class="products_main">
+          <ul class="products_list">
+            <li class="products_item">
+              <div class="products_item_blue">
+                <img src="images/Icons/house.svg" alt="" class="products_icon">
+                <h3 class="products_title">Жильё</h3>
+                <p class="products_text">Рекомендуем пожить в настоящем мотеле,
+                  всё как в кино!</p>
+              </div>
+            </li>
+            <li class="products_item">
+              <div class="products_item_white">
+                <img src="images/Icons/food.svg" alt="" class="products_icon">
+                <h3 class="products_title">Еда</h3>
+                <p class="products_text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="products_item">
+              <div class="products_item_blue">
+                <img src="images/Icons/present.svg" alt="" class="products_icon">
+                <h3 class="products_title">Сувениры</h3>
+                <p class="products_text">Не только китайского, но и настоящего местного производства!</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -143,8 +144,8 @@
         <div class="subscribe_item">
           <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
           <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="" method="post">
-            <input type="email" name="subscribe_mail" placeholder="Ваш e-mail" id="">
+          <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
+            <label><input type="email" name="subscribe_mail" placeholder="Ваш e-mail"></label>
             <button type="submit">Подписаться</button>
           </form>
         </div>
@@ -171,10 +172,12 @@
             <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
           </li>
           <li class="footer_item">
-            <a href="#" class="html_logo_link"><img src="images/Icons/HTML Academy_logo.svg" alt="Логотип HTML Академии"></a>
+            <a href="#" class="html_logo_link"><img src="/images/Icons/HTML_Academy_logo.svg"
+                alt="Логотип HTML Академии"></a>
           </li>
         </ul>
       </footer>
     </main>
   </body>
+
 </html>
