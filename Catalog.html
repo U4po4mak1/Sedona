@@ -61,40 +61,47 @@
                   class="breadcrubs_hotels">Гостиницы</span></a>
             </li>
           </ul>
+
           <div class="hotel_form">
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="infrastructure">
-                <p class="infrastruture_item_title">Инфраструктура:</p>
-                <ul class="infrastruture_list">
-                  <li class="infrastruture_item">
-                    <label><input type="checkbox" name="pool_check" class="infrastructure_item_pool"
-                        checked>Бассейн</label>
-                  </li>
-                  <li class="infrastruture_item">
-                    <label><input type="checkbox" name="parking_check" class="infrastructure_item_parking"
-                        checked>Парковка</label>
-                  </li>
-                  <li class="infrastruture_item">
-                    <label><input type="checkbox" name="wi-fi_check" class="infrastructure_item_wifi">Wi-Fi</label>
-                  </li>
-                </ul>
+                <fieldset class="infrastruture_list">
+                  <legend class="infrastruture_item_title">Инфраструктура:</legend>
+                  <ul class="infrastruture_list">
+                    <li class="infrastruture_item">
+                      <label><input type="checkbox" name="pool_check" class="infrastructure_item_pool"
+                          checked>Бассейн</label>
+                    </li>
+                    <li class="infrastruture_item">
+                      <label><input type="checkbox" name="parking_check" class="infrastructure_item_parking"
+                          checked>Парковка</label>
+                    </li>
+                    <li class="infrastruture_item">
+                      <label><input type="checkbox" name="wi-fi_check" class="infrastructure_item_wifi">Wi-Fi</label>
+                    </li>
+                  </ul>
+                </fieldset>
               </div>
+
               <div class="home_type">
-                <p class="home_type_item_title">Тип жилья:</p>
-                <ul class="home_type_list">
-                  <li class="home_type_item">
-                    <label><input type="radio" name="home_type_radio" class="home_type_radio" checked
-                        value="hotel">Гостиница</label>
-                  </li>
-                  <li class="home_type_item">
-                    <label><input type="radio" name="home_type_radio" class="mome_type_radio"
-                        value="motel">Мотель</label>
-                  </li>
-                  <li class="home_type_item">
-                    <label><input type="radio" name="home_type_radio" class="appartment_type_radio"
-                        value="appartments">Апартаменты</label>
-                  </li>
-                </ul>
+
+                <fieldset class="home_type_list">
+                  <legend class="home_type_list_title">Тип жилья:</legend>
+                  <ul class="home_type_list">
+                    <li class="home_type_item">
+                      <label><input type="radio" name="home_type_radio" class="home_type_radio" checked
+                          value="hotel">Гостиница</label>
+                    </li>
+                    <li class="home_type_item">
+                      <label><input type="radio" name="home_type_radio" class="mome_type_radio"
+                          value="motel">Мотель</label>
+                    </li>
+                    <li class="home_type_item">
+                      <label><input type="radio" name="home_type_radio" class="appartment_type_radio"
+                          value="appartments">Апартаменты</label>
+                    </li>
+                  </ul>
+                </fieldset>
               </div>
               <div class="price">
                 <ul class="price_list">
@@ -131,33 +138,14 @@
               <option value="poor_first">Сначала дешевые</option>
               <option value="cheap_first">Сначала дорогие</option>
             </select>
-            <a href="#" class="button_vision"><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 0H0V6H4V0Z" fill="black" />
-                <path d="M16 0H12V6H16V0Z" fill="black" />
-                <path d="M10 0H6V6H10V0Z" fill="black" />
-                <path d="M4 8H0V14H4V8Z" fill="black" />
-                <path d="M16 8H12V14H16V8Z" fill="black" />
-                <path d="M10 8H6V14H10V8Z" fill="black" />
-              </svg>
+            <a href="#" class="button_vision">
+              <img src="/images/Catalog_icons/table_bision.svg" alt="Вывести таблицей" class="table_sheet_icon">
             </a>
-            <a href="#" class="button_computer"><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 12H0V14H16V12Z" fill="black" />
-                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
-              </svg>
+            <a href="#" class="button_computer">
+              <img src="/images/Catalog_icons/computer.svg" alt="Одной страницей" class="one_sheet_vision">
             </a>
-            <a href="#" class="button_list"><svg width="16" height="14" viewBox="0 0 16 14" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 0H0V2H2V0Z" fill="black" />
-                <path d="M16 0H4V2H16V0Z" fill="black" />
-                <path d="M2 4H0V6H2V4Z" fill="black" />
-                <path d="M16 4H4V6H16V4Z" fill="black" />
-                <path d="M2 8H0V10H2V8Z" fill="black" />
-                <path d="M16 8H4V10H16V8Z" fill="black" />
-                <path d="M2 12H0V14H2V12Z" fill="black" />
-                <path d="M16 12H4V14H16V12Z" fill="black" />
-              </svg>
+            <a href="#" class="button_list"><img src="/images/Catalog_icons/list.svg" alt="Вывести списком"
+                class="one_list_vision">
             </a>
           </div>
         </section>
@@ -214,8 +202,8 @@
               </li>
               <li class="hotel_card_item">
                 <p>Гостиница <span>От 1500</span></p>
-                  <a href="#" class="hotel_about">подробнее</a>
-                  <button type="submit">в избранное</button>
+                <a href="#" class="hotel_about">подробнее</a>
+                <button type="submit">в избранное</button>
               </li>
               <li class="hotel_rating">
                 <img src="/images/Icons/star.svg" alt="Звезда рейтинга" class="hotel_rating_star">
