@@ -1,10 +1,9 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: Марат Исмагилов.
 * Наставник: `Димаруша`.
 * Мой сайт: https://u4po4mak1.github.io/Sedona/
 
-![image](https://github.com/user-attachments/assets/d023bfc6-f6e8-4d92-beb2-7efc606aced6)
 
 ---
 
