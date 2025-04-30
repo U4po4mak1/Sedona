@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+
+  .visually_hidden{
+    display: none;
+  }
+
+  /*-------- HEADER-----------*/
+
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .navigation{
+    max-width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation_text{
+    display: flex;
+
+  }
+  .navigation_list{
+    display: flex;
+  }
+
+  .navigation_item a{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    padding: 16px 20px;
+}
+
+ .active_page{
+    text-decoration: underline 2px solid #756257;
+    text-underline-offset: 20px;
+
+}
+
+.navigation_icons{
+    display: flex;
+    align-items: center;
+}
+
+.navigation_icons > img{
+    display: block;
+}
+.navigation_icons_link{
+    padding: 22px 12px;
+
+}
+.like_count{
+    position: relative;
+}
+.navigation_icon_link_count{
+    position: absolute;
+    z-index: 5;
+    bottom: 10px;
+    right: 1px;
+    background-color: green;
+    color: white;
+    font-size: 10px;
+    line-height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.navigation_icon_link_button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    background-color: #756157;
+    padding: 8px 34px;
+    border-radius: 4px;
+    margin: 14px 0 14px 20px;
+}
+
+  /*-------- welcome-----------*/
+
+  .welcome_image{
+    background-image: url("../images/index_background.jpg");
+    width: 1200px;
+    height: 450px;
+  }
