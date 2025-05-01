@@ -322,7 +322,7 @@ li {
 
 /*-------- Find Hotel-----------*/
 
-.find_hotel_item{
+.find_hotel_item {
   max-width: 592px;
   margin: 0 auto;
 }
@@ -334,7 +334,7 @@ li {
   text-transform: uppercase;
 }
 
-.find_hotel_text{
+.find_hotel_text {
   font-weight: 400;
   font-size: 22px;
   text-align: center;
@@ -342,7 +342,7 @@ li {
   margin-bottom: 54px;
 }
 
-.find_hotel_link{
+.find_hotel_link {
   font-weight: 700;
   font-size: 20px;
   line-height: 180%;
@@ -353,4 +353,25 @@ li {
   color: white;
 }
 
+.find_hotel_button {
+  margin-bottom: 96px;
+}
+
 /*-------- Subscribe-----------*/
+
+.subscribe_container {
+  background-image: url("../images/subscribe_background.jpg");
+}
+
+.subscribe_title {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.subscribe_text{
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+}
