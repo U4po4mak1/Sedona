@@ -362,6 +362,7 @@ li {
 
 .subscribe_image {
   background-image: url("../images/subscribe_background.jpg");
+  background-repeat: no-repeat;
 }
 
 .subscribe_content {
@@ -389,8 +390,9 @@ li {
   color: white;
 }
 
-.subscribe_email_input{
-
+.subscribe_form_container {
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe_button {
@@ -400,5 +402,52 @@ li {
   background-color: #82B3D3;
   color: white;
   padding: 10px 50px;
+  height: 52px;
   border: none;
+  margin: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscribe_email_input {
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+  height: 52px;
+  border: none;
+  margin: 0;
+  background-color: white;
+}
+
+/*-------- Footer-----------*/
+
+.footer_list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1060px;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  align-items: center;
+  padding: 0;
+}
+
+.footer_icon_list {
+  display: flex;
+  padding: 0;
+}
+
+.phone {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.footer_item {
+  padding: 0px 10px;
+  width: 47px;
+  margin: 0 auto;
+  align-items: center;
 }

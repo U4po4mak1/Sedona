@@ -156,35 +156,44 @@
                 <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
                 <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
               </div>
-              <div class="subscribe_form">
-                <form class="subscribe_form_item" action="https://echo.htmlacademy.ru/" method="post">
-                  <label><input type="email" name="subscribe_mail" placeholder="Ваш e-mail" class="subscribe_email_input"></label>
+              <div class="subscribe_form_container">
+                <div class="subscribe_input_container">
+                  <form class="subscribe_form_item" action="https://echo.htmlacademy.ru/" method="post">
+                    <label><input type="email" name="subscribe_mail" placeholder="Ваш e-mail"
+                        class="subscribe_email_input"></label>
+                </div>
+                <div class="subscribe_button_container">
                   <button type="submit" class="subscribe_button">Подписаться</button>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <footer>
-          <ul class="footer_list">
-            <li class="footer_item">
-              <a href="#" class="vk_icon">Внотакте</a>
-            </li>
-            <li class="footer_item">
-              <a href="#" class="tg_icon">Телеграм</a>
-            </li>
-            <li class="footer_item">
-              <a href="#" class="youtube_icon">Ютуб</a>
-            </li>
-            <li class="footer_item">
-              <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
-            </li>
-            <li class="footer_item">
-              <a href="#" class="html_logo_link"><img src="images/Icons/HTML_Academy_logo.svg"
-                  alt="Логотип HTML Академии"></a>
-            </li>
-          </ul>
+          <div class="footer">
+            <ul class="footer_list">
+              <li>
+                <ul class="footer_icon_list">
+                  <li class="footer_item">
+                    <a href="#" class="vk_icon"><img src="images/Icons/vk.svg" alt="Вконтакте" class="footer_image vk"></a>
+                  </li>
+                  <li class="footer_item">
+                    <a href="#" class="tg_icon"><img src="images/Icons/tg.svg" alt="Телеграм" class="footer_image tg" ></a>
+                  </li>
+                  <li class="footer_item">
+                    <a href="#" class="youtube_icon"><img src="images/Icons/youtube.svg" alt="Ютуб" class="footer_image youtube"></a>
+                  </li>
+                </ul>
+              <li class="footer_item_phone">
+                <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
+              </li>
+              <li class="footer_item_logo_builder">
+                <a href="#" class="html_logo_link"><img src="images/Icons/HTML_Academy_logo.svg"
+                    alt="Логотип HTML Академии"></a>
+              </li>
+            </ul>
         </footer>
       </div>
     </main>
