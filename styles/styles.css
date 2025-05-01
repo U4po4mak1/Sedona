@@ -1,123 +1,155 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
-  }
-
-  html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-  body {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  a {
-    text-decoration: none;
-  }
-  li{
-    list-style: none;
-  }
-
-  .visually_hidden{
-    display: none;
-  }
-
-  /*-------- HEADER-----------*/
-
-  .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center ;
-  }
-
-  .navigation{
-    max-width: 1060px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .navigation_text{
-    display: flex;
-
-  }
-  .navigation_list{
-    display: flex;
-  }
-
-  .navigation_item a{
-    color: black;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    padding: 16px 20px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 }
 
- .active_page{
-    text-decoration: underline 2px solid #756257;
-    text-underline-offset: 20px;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.visually_hidden {
+  display: none;
+}
+
+/*-------- HEADER-----------*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navigation {
+  max-width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navigation_text_links {
+  display: flex;
+  align-items: center;
 
 }
 
-.navigation_list_icons{
-    display: flex;
+.navigation_list {
+  display: flex;
+}
+
+.navigation_item a {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  padding: 16px 20px;
+}
+
+.active_page {
+  text-decoration: underline 2px solid #756257;
+  text-underline-offset: 20px;
 
 }
 
-.navigation_icons_link{
-    padding: 16px 20px;
-
-}
-.like_count{
-    position: relative;
-}
-.navigation_icon_link_count{
-    position: absolute;
-    z-index: 5;
-    bottom: 500px;
-    right: 15px;
-    background-color: green;
-    color: white;
-    font-size: 10px;
-    line-height: 100%;
-    padding: 5px;
-    border-radius: 10px;
-
-}
-.navigation_icon_link_button{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.2;
-    color: white;
-    text-transform: uppercase;
-    align-items: center;
-    background-color: #756157;
-    padding: 8px 34px;
-    border-radius: 4px;
+.navigation_list_icons {
+  display: flex;
+  justify-content: flex-start;
 }
 
-  /*-------- welcome-----------*/
+.navigation_icons_link {
+  padding: 22px 12px;
 
-  .welcome_image{
-    background-image: url("../images/index_background.jpg");
-    width: 1200px;
-    height: 450px;
-  }
+}
+
+.navigation_list_like_count {
+  position: relative;
+}
+
+.navigation_icon_link_count {
+  position: absolute;
+  z-index: 5;
+  bottom: 12px;
+  right: 2px;
+  background-color: green;
+  color: white;
+  font-size: 10px;
+  line-height: 100%;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+.navigation_icon_link_button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+  align-items: center;
+  background-color: #756157;
+  padding: 8px 34px;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+/*-------- welcome text-----------*/
+
+.welcome_image {
+  background: url("../images/index_background.jpg") no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+.welcome_sedona_text {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/*-------- advantages-----------*/
+
+.advantages_start {
+  text-align: center;
+}
+
+.advantages_header{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.advantages_text{
+  font-size: 22px;
+}
