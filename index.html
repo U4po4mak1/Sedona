@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Добро пожаловать в Седону</title>
+    <link rel="stylesheet" href="/styles/normalize.min.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -149,16 +150,20 @@
         </section>
 
         <section class="subscribe">
-          <div class="subscribe_container">
-          <div class="subscribe_item">
-            <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
-            <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
-              <label><input type="email" name="subscribe_mail" placeholder="Ваш e-mail"></label>
-              <button type="submit">Подписаться</button>
-            </form>
+          <div class="subscribe_image">
+            <div class="subscribe_content">
+              <div class="subscribe_item_text">
+                <h2 class="subscribe_title">Подпишитесь на рассылку</h2>
+                <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              </div>
+              <div class="subscribe_form">
+                <form class="subscribe_form_item" action="https://echo.htmlacademy.ru/" method="post">
+                  <label><input type="email" name="subscribe_mail" placeholder="Ваш e-mail" class="subscribe_email_input"></label>
+                  <button type="submit" class="subscribe_button">Подписаться</button>
+                </form>
+              </div>
+            </div>
           </div>
-        </div>
         </section>
 
         <footer>

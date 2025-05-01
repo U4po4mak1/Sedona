@@ -30,6 +30,7 @@ body {
   font-size: 18px;
   line-height: 1.2;
   background-color: #756257;
+  margin: 0;
 }
 
 p {
@@ -359,10 +360,19 @@ li {
 
 /*-------- Subscribe-----------*/
 
-.subscribe_container {
+.subscribe_image {
   background-image: url("../images/subscribe_background.jpg");
 }
-.subscribe_item_text{
+
+.subscribe_content {
+  max-width: 684px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.subscribe_item_text {
+  padding: 0 105px;
+  margin-bottom: 54px;
 
 }
 
@@ -373,8 +383,22 @@ li {
   color: white;
 }
 
-.subscribe_text{
+.subscribe_text {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   color: white;
+}
+
+.subscribe_email_input{
+
+}
+
+.subscribe_button {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: white;
+  padding: 10px 50px;
+  border: none;
 }
