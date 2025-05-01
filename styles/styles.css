@@ -349,7 +349,7 @@ li {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 12px 50px;
   color: white;
 }
 
@@ -361,6 +361,9 @@ li {
 
 .subscribe_container {
   background-image: url("../images/subscribe_background.jpg");
+}
+.subscribe_item_text{
+
 }
 
 .subscribe_title {
