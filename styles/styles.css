@@ -60,6 +60,7 @@ li {
 
 .navigation {
   max-width: 1060px;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,29 +68,43 @@ li {
   background-color: white;
 }
 
+.navigation_link_logo {
+  padding: 0;
+  margin: 0;
+}
+
 .navigation_text_links {
   display: flex;
-  align-items: center;
-
 }
 
 .navigation_list {
   display: flex;
+  align-items: center;
 }
 
-.navigation_item a {
-  color: black;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 120%;
-  padding: 16px 20px;
+.navigation_item{
+  padding: 0 20px;
+}
+.navigation_item a{
+color: black;
+font-weight: 700;
+font-size: 20px;
+line-height: 120%;
 }
 
+.active_page::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*
 .active_page {
   text-decoration: underline 2px solid #756257;
   text-underline-offset: 20px;
-
 }
+  */
 
 .navigation_list_icons {
   display: flex;
@@ -137,7 +152,7 @@ li {
 .welcome_image {
   background: url("../images/index_background.jpg") no-repeat;
   width: 1200px;
-  background-size:cover;
+  background-size: cover;
   margin-bottom: 70px;
 }
 
@@ -364,7 +379,7 @@ li {
 .subscribe_image {
   background-image: url("../images/subscribe_background.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 .subscribe_content {
@@ -424,7 +439,7 @@ li {
 
 /*-------- Footer-----------*/
 
-.footer{
+.footer {
   background-color: white;
 }
 
@@ -451,6 +466,6 @@ li {
   color: black;
 }
 
-.youtube{
+.youtube {
   padding-top: 3px;
 }
