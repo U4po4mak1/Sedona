@@ -888,7 +888,7 @@ input::-webkit-inner-spin-button {
 
 .button_table_vision {
   display: block;
-  background: url("/images/Icons/table_bision.svg") no-repeat center;
+  background: url("images/Icons/table_bision.svg") no-repeat center;
   width: 16px;
   height: 14px;
   padding: 17px 16px;
@@ -898,7 +898,7 @@ input::-webkit-inner-spin-button {
 
 .button_card_vision {
   display: block;
-  background: url("/images/Icons/computer.svg") no-repeat center;
+  background: url("images/Icons/computer.svg") no-repeat center;
   width: 16px;
   height: 14px;
   padding: 17px 16px;
@@ -908,7 +908,7 @@ input::-webkit-inner-spin-button {
 
 .button_list_vision {
   display: block;
-  background: url("/images/Icons/list.svg") no-repeat center;
+  background: url("images/Icons/list.svg") no-repeat center;
   width: 16px;
   height: 14px;
   padding: 17px 16px;
