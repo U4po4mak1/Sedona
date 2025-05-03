@@ -456,3 +456,197 @@ img {
 
 /*-------- Catalog-----------*/
 
+.sedona_hotels_search {
+    background-image: url("../images/background_filter_catalog.jpg");
+    background-repeat: no-repeat;
+    min-height: 412px;
+    color: #fff;
+}
+
+.sedona_hotel_item {
+    padding: 35px 0 40px 0;
+    margin: 0 70px;
+
+}
+
+.sedona_hotels_title {
+    font-weight: 700;
+    font-size: 60px;
+    text-align: left;
+    margin: 0;
+}
+
+.breadcrubs_list {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    align-items: center;
+}
+
+.breadcrubs_item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hotel_form_container{
+    margin-left: 70px;
+}
+
+.hotel_form {
+    display: flex;
+}
+
+.hotel_form_list_item {
+    border: none;
+    padding: 0;
+    min-inline-size: unset;
+    text-align: left;
+}
+
+.hotel_form_item_title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.hotel_form_list {
+    padding: 0;
+    margin-top: 32px;
+}
+
+.hotel_form_item {
+    margin-top: 16px;
+}
+
+.hotel_form_label {
+    display: flex;
+    gap: 16px;
+}
+
+.hotel_form_item_checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin: 0;
+    background-color: #fff;
+
+}
+
+.hotel_form_item_checkbox:checked {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    background-image: url("/images/Icons/check.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+
+.hotel_form_item_hotel_radio {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0;
+    background-color: #fff;
+}
+
+.hotel_form_item_hotel_radio:checked {
+    background: url("/images/Icons/circle_radio.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0;
+    background-color: #fff;
+}
+
+.hotel_price{
+    margin-left: 140px;
+}
+
+.hotel_price_list {
+    display: flex;
+    padding: 0;
+    margin-top: 32px;
+}
+
+.hotel_minimal_price_item {
+    position: relative;
+}
+
+.hotel_maximal_price_item {
+    position: relative;
+}
+
+.price_input {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 20px;
+    width: 143px;
+    height: 48px;
+}
+
+.minimal_price {
+    border-radius: 4px 0 0 4px;
+}
+
+.maximal_price {
+    border-radius: 0 4px 4px 0;
+}
+
+.input_text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    position: absolute;
+    left: 106px;
+    bottom: 16px;
+    opacity: 0.3;
+}
+
+.Hotel_search_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 70px;
+}
+
+.search_result_button {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #82B3D3;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 56px;
+}
+
+.search_reset_button {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: #fff;
+
+}
+
+.price_slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+
+
+}
+.price_slider::-webkit-slider-thumb{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}

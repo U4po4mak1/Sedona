@@ -12,112 +12,116 @@
   <div class="container">
 
     <header class="main_header">
-      <div class="container_menu">
-        <nav class="navigation">
-          <div class="navigation_text_links">
-            <a href="index.html" class="navigation_logo">
-              <img src="images/Icons/logo.svg" alt="логотип Седона">
-            </a>
-            <ul class="navigation_list">
-              <li class="navigation_item">
-                <a href="index.html" class="navigation_link">Главная</a>
-              </li>
-              <li class="navigation_item">
-                <a href="#" class="navigation_link">О седоне</a>
-              </li>
-              <li class="navigation_item">
-                <a href="catalog.html" class="navigation_link active_page">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
-          <ul class="navigation_list_icons">
-            <li class="navigation_list_icons_link"><a href="#" class="navigation_icons_link"><img
-                  src="images/Icons/search.svg" width="20" height="20" alt="Поиск"></a></li>
-            <li class="navigation_list_icons_link counter">
-              <a href="#" class="navigation_icons_link"><img src="images/Icons/heart.svg" width="20" height="20"
-                  alt="Избранное"></a>
-              <span class="navigation_icon_link_count">12</span>
+      <nav class="navigation">
+        <div class="navigation_text_links">
+          <a href="index.html" class="navigation_logo">
+            <img src="images/Icons/logo.svg" alt="логотип Седона">
+          </a>
+          <ul class="navigation_list">
+            <li class="navigation_item">
+              <a href="index.html" class="navigation_link">Главная</a>
             </li>
-            <li class="navigation_list_icons_link"><a href="#" class="navigation_icon_link_button">Хочу сюда</a></li>
+            <li class="navigation_item">
+              <a href="#" class="navigation_link">О седоне</a>
+            </li>
+            <li class="navigation_item">
+              <a href="catalog.html" class="navigation_link active_page">Гостиницы</a>
+            </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+        <ul class="navigation_list_icons">
+          <li class="navigation_list_icons_link"><a href="#" class="navigation_icons_link"><img
+                src="images/Icons/search.svg" width="20" height="20" alt="Поиск"></a></li>
+          <li class="navigation_list_icons_link counter">
+            <a href="#" class="navigation_icons_link"><img src="images/Icons/heart.svg" width="20" height="20"
+                alt="Избранное"></a>
+            <span class="navigation_icon_link_count">12</span>
+          </li>
+          <li class="navigation_list_icons_link"><a href="#" class="navigation_icon_link_button">Хочу сюда</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <section class="sedona_hotels_search">
+        <div class="sedona_hotel_item">
           <h1 class="sedona_hotels_title">Гостиницы Седоны</h1>
           <ul class="breadcrubs_list">
             <li class="breadcrubs_item">
-              <a href="index.html" class="home_icon">Главная</a>
+              <a href="index.html" class="home_icon"><img src="images/Icons/home.svg" alt="Главная"></a>
+            </li>
+            <li class="breadcrubs_item">
+              <img src="/images/Icons/arrow.svg" alt="">
             </li>
             <li class="breadcrubs_item"><a href="#" class="hotels_link">Гостиницы</a>
             </li>
           </ul>
+        </div>
 
-          <div class="hotel_form">
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <div class="infrastructure">
-                <fieldset class="infrastruture_list">
-                  <legend class="infrastruture_item_title">Инфраструктура:</legend>
-                  <ul class="infrastruture_list">
-                    <li class="infrastruture_item">
-                      <label><input type="checkbox" name="pool_check" class="infrastructure_item_pool"
-                          checked>Бассейн</label>
-                    </li>
-                    <li class="infrastruture_item">
-                      <label><input type="checkbox" name="parking_check" class="infrastructure_item_parking"
-                          checked>Парковка</label>
-                    </li>
-                    <li class="infrastruture_item">
-                      <label><input type="checkbox" name="wi-fi_check" class="infrastructure_item_wifi">Wi-Fi</label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
+        <div class="hotel_form_container">
+          <form action="https://echo.htmlacademy.ru/" method="get" class="hotel_form">
+            <div class="hotel_form_infrastructure">
+              <fieldset class="hotel_form_list_item">
+                <legend class="hotel_form_item_title">Инфраструктура:</legend>
+                <ul class="hotel_form_list">
+                  <li class="hotel_form_item hotel_form_checkbox">
+                    <label class="hotel_form_label checkbox_name"><input type="checkbox" name="pool_check" class="hotel_form_item_checkbox"
+                        checked>Бассейн</label>
+                  </li>
+                  <li class="hotel_form_item hotel_form_checkbox">
+                    <label class="hotel_form_label checkbox_name"><input type="checkbox" name="parking_check" class="hotel_form_item_checkbox"
+                        checked>Парковка</label>
+                  </li>
+                  <li class="hotel_form_item hotel_form_checkbox">
+                    <label class="hotel_form_label checkbox_name"><input type="checkbox" name="wi-fi_check" class="hotel_form_item_checkbox">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
-              <div class="home_type">
+            <div class="hotel_form_container">
 
-                <fieldset class="home_type_list">
-                  <legend class="home_type_list_title">Тип жилья:</legend>
-                  <ul class="home_type_list">
-                    <li class="home_type_item">
-                      <label><input type="radio" name="home_type_radio" class="home_type_radio" checked
-                          value="hotel">Гостиница</label>
-                    </li>
-                    <li class="home_type_item">
-                      <label><input type="radio" name="home_type_radio" class="mome_type_radio"
-                          value="motel">Мотель</label>
-                    </li>
-                    <li class="home_type_item">
-                      <label><input type="radio" name="home_type_radio" class="appartment_type_radio"
-                          value="appartments">Апартаменты</label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="hotel_price">
-                <fieldset class="hotel_price_field">
-                  <legend class="hotel_price_title">Стоимость, ₽:</legend>
-                  <ul class="hotel_price_list">
-                    <li class="hotel_price_item">
-                      <label for="price_min">от</label>
-                      <input type="number" name="price_min" id="price_min" value="0">
-                      <label for="price_max">до</label>
-                      <input type="number" name="price_max" id="price_max" max="9000" value="9000">
-                    </li>
-                    <li class="hotel_price_item"><label><input type="range" min="0" max="9000" step="100">
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="Hotel_search_buttons">
-                <button type="submit" class="search_result_button">Применить</button>
-                <button type="reset" class="search_reset_button">Сбросить</button>
-              </div>
-            </form>
-          </div>
+              <fieldset class="hotel_form_list_item">
+                <legend class="hotel_form_item_title home_type_title">Тип жилья:</legend>
+                <ul class="hotel_form_list">
+                  <li class="hotel_form_item hotel_form_radio">
+                    <label class="hotel_form_label radio_name"><input type="radio" name="home_type_radio" class="hotel_form_item_hotel_radio" checked
+                        value="hotel">Гостиница</label>
+                  </li>
+                  <li class="hotel_form_item hotel_form_radio">
+                    <label class="hotel_form_label radio_name"><input type="radio" name="home_type_radio" class="hotel_form_item_hotel_radio"
+                        value="motel">Мотель</label>
+                  </li>
+                  <li class="hotel_form_item hotel_form_radio">
+                    <label class="hotel_form_label radio_name"><input type="radio" name="home_type_radio" class="hotel_form_item_hotel_radio"
+                        value="appartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="hotel_price">
+              <fieldset class="hotel_price_field hotel_form_list_item">
+                <legend class="hotel_price_title hotel_form_item_title">Стоимость, ₽:</legend>
+                <ul class="hotel_price_list">
+                  <li class="hotel_minimal_price_item">
+                    <label for="price_min"></label>
+                    <input type="number" name="price_min" id="price_min" value="0" class="price_input minimal_price"><span class="input_text input_min">от</span>
+                  </li>
+                  <li class="hotel_maximal_price_item">
+                    <label for="price_max"></label>
+                    <input type="number" name="price_max" id="price_max" max="9000" value="9000" class="price_input maximal_price"><span class="input_text input_max">до</span>
+                  </li>
+                </ul>
+                <label><input type="range" min="0" max="9000" step="100" class="price_slider">
+                </label>
+              </fieldset>
+            </div>
+            <div class="Hotel_search_buttons">
+              <button type="submit" class="search_result_button">Применить</button>
+              <button type="reset" class="search_reset_button">Сбросить</button>
+            </div>
+          </form>
+        </div>
       </section>
 
       <section class="search_result">
