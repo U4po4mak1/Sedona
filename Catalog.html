@@ -70,22 +70,21 @@
                         <span class="checkbox_name">Бассейн</span></label>
                     </li>
                     <li class="hotel_form_item hotel_form_checkbox">
-                      <input type="checkbox" name="parking_check"
-                          class="hotel_form_item_checkbox" id="input_parking" checked>
-                          <label class="hotel_form_label_checkbox" for="input_parking">
-                          <span class="checkbox_name">Парковка</span></label>
+                      <input type="checkbox" name="parking_check" class="hotel_form_item_checkbox" id="input_parking"
+                        checked>
+                      <label class="hotel_form_label_checkbox" for="input_parking">
+                        <span class="checkbox_name">Парковка</span></label>
                     </li>
                     <li class="hotel_form_item hotel_form_checkbox">
-                      <input type="checkbox" name="wi-fi_check"
-                          class="hotel_form_item_checkbox" id="input_wifi">
-                          <label class="hotel_form_label_checkbox" for="input_wifi">
-                          <span class="checkbox_name">Wi-Fi</span></label>
+                      <input type="checkbox" name="wi-fi_check" class="hotel_form_item_checkbox" id="input_wifi">
+                      <label class="hotel_form_label_checkbox" for="input_wifi">
+                        <span class="checkbox_name">Wi-Fi</span></label>
                     </li>
                   </ul>
                 </fieldset>
               </div>
 
-              <div class="hotel_form_container">
+              <div class="hotel_form_container_hotel_type">
 
                 <fieldset class="hotel_form_list_item">
                   <legend class="hotel_form_item_title home_type_title">Тип жилья:</legend>
@@ -138,8 +137,10 @@
                         class="price_input maximal_price"><span class="input_text input_max">до</span>
                     </li>
                   </ul>
-                  <label><input type="range" min="0" max="9000" step="100" class="price_slider">
-                  </label>
+                  <div class="price_slider_container">
+                    <input type="range" min="0" max="9000" step="100" class="price_slider lower" value="0">
+                    <input type="range" min="0" max="9000" step="100" class="price_slider higher" value="7500">
+                  </div>
                 </fieldset>
               </div>
               <div class="Hotel_search_buttons">
@@ -154,19 +155,21 @@
           <h2 class="visually_hidden">Результаты поиска</h2>
           <div class="search_result_list">
             <h2 class="search_title">Найдено гостиниц: 38</h2>
-            <label for="hotel_price_select"></label><select name="filter" id="hotel_price_select" class="hotel_filter">
-              <option value="poor_first">Сначала дешевые</option>
-              <option value="cheap_first">Сначала дорогие</option>
+            <div class="hotel_filter_container">
+            <select name="filter" id="hotel_price_select" class="hotel_filter">
+              <option value="poor_first" id="hotel_price_select" class="hotel_filter_option">Сначала дешевые</option>
+              <option value="cheap_first" id="hotel_price_select">Сначала дорогие</option>
             </select>
+          </div>
             <ul class="hotel_list_vision">
               <li class="hotel_list_link">
-                <a href="catalog.html?view=tile" class="button_table_vision">Вывести таблицей</a>
+                <a href="catalog.html?view=tile" class="button_table_vision"></a>
               </li>
               <li class="hotel_list_link">
-                <a href="catalog.html?view=card" class="button_card_vision">Вывести с описанием</a>
+                <a href="catalog.html?view=card" class="button_card_vision"></a>
               </li>
               <li class="hotel_list_link">
-                <a href="catalog.html?view=list" class="button_list_vision">Вывести списком</a>
+                <a href="catalog.html?view=list" class="button_list_vision"></a>
               </li>
             </ul>
           </div>
