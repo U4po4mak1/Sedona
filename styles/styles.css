@@ -488,7 +488,7 @@ img {
     color: #fff;
 }
 
-.hotel_form_container{
+.hotel_form_container {
     margin-left: 70px;
 }
 
@@ -514,6 +514,8 @@ img {
 }
 
 .hotel_form_item {
+    display: flex;
+    gap: 16px;
     margin-top: 16px;
 }
 
@@ -523,6 +525,43 @@ img {
 }
 
 .hotel_form_item_checkbox {
+    display: none;
+}
+.checkbox_name {
+    margin-left: 36px;
+    white-space: nowrap;
+}
+
+.hotel_form_label_checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.hotel_form_item_checkbox + .hotel_form_label_checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.hotel_form_item_checkbox:checked + .hotel_form_label_checkbox::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    top: 4px;
+    left: 3px;
+    border-bottom: 3px solid #3F5E72;
+    border-left: 3px solid #3F5E72;
+    transform: rotate(-45deg);
+}
+
+/* .hotel_form_item_checkbox {
     appearance: none;
     -webkit-appearance: none;
     width: 20px;
@@ -541,10 +580,47 @@ img {
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
-}
+} */
 
 
 .hotel_form_item_hotel_radio {
+    display: none;
+}
+
+.radio_name_title {
+    margin-left: 36px;
+}
+
+.radio_name {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0;
+    background-color: #fff;
+}
+
+.hotel_form_item_hotel_radio + .radio_name {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0;
+    background-color: #fff;
+}
+
+.hotel_form_item_hotel_radio:checked + .radio_name::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3F5E72;
+}
+
+
+/* .hotel_form_item_hotel_radio {
     appearance: none;
     -webkit-appearance: none;
     width: 20px;
@@ -555,15 +631,16 @@ img {
 }
 
 .hotel_form_item_hotel_radio:checked {
-    background: url("/images/Icons/circle_radio.svg") no-repeat center;
+    background: url("/images/Icons/circle_radio.svg") no-repeat;
+    background-position: 50% 50%;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin: 0;
     background-color: #fff;
-}
+} */
 
-.hotel_price{
+.hotel_price {
     margin-left: 140px;
 }
 
@@ -587,6 +664,11 @@ img {
     padding: 12px 20px;
     width: 143px;
     height: 48px;
+}
+
+.price_input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .minimal_price {
@@ -637,14 +719,20 @@ img {
 }
 
 .price_slider {
-    appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 100%;
     height: 4px;
 
 
 }
-.price_slider::-webkit-slider-thumb{
+
+.price_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
     width: 20px;
     height: 20px;
     border-radius: 4px;
