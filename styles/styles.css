@@ -547,6 +547,7 @@ img {
 }
 
 .hotel_form_item_title {
+  font-family: 'PT Sans' , sans-serif;
   font-weight: 700;
   font-size: 20px;
 }
@@ -716,6 +717,7 @@ img {
 }
 
 .price_input {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 18px;
   padding: 12px 20px;
@@ -740,6 +742,7 @@ input::-webkit-inner-spin-button {
 }
 
 .input_text {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #000;
@@ -757,26 +760,26 @@ input::-webkit-inner-spin-button {
 }
 
 .search_result_button {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
   background-color: #82B3D3;
   border-radius: 4px;
-  padding: 10px 50px 8px 50px;
+  padding: 8px 50px;
   width: 199px;
-  height: 36px;
   border: none;
   margin-top: 56px;
 }
 
 .search_reset_button {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   border-radius: 4px;
-  padding: 10px 50px 8px 50px;
+  padding: 8px 50px;
   width: 199px;
-  height: 36px;
   text-transform: uppercase;
   background: none;
   border: none;
@@ -856,6 +859,10 @@ input::-webkit-inner-spin-button {
   appearance: none;
   position: relative;
   border: 2px solid #E5E5E5;
+  font-family: 'PT Sans' , sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
   border-radius: 4px;
   padding: 14px 20px;
   width: 292px;
@@ -970,8 +977,9 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel_card_item_button {
+  font-family: 'PT Sans' , sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 8px 15px;
   background-color: #82B3D3;
@@ -1100,6 +1108,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog_subscribe_button {
+  font-family: 'PT Sans' , sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
@@ -1113,6 +1122,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog_subscribe_email_input {
+  font-family: 'PT Sans' , sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.6);
