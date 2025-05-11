@@ -82,6 +82,11 @@ button {
   height: 64px;
 }
 
+.navigation_logo {
+  margin-right: 30px;
+
+}
+
 .navigation {
 
   max-width: 1060px;
@@ -92,6 +97,8 @@ button {
   margin: 0 auto;
   background-color: white;
 }
+
+
 
 .navigation_link_logo {
   padding: 0;
@@ -109,32 +116,42 @@ button {
   display: flex;
   align-self: stretch;
   padding: 0;
-  margin: 0 40px;
 }
 
 .navigation_item {
   display: flex;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
-.navigation_item a {
+.navigation_link {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #000;
   font-weight: 700;
   font-size: 20px;
   height: 64px;
 }
 
-.navigation_link:hover {
+.navigation_link:hover,
+.navigation_link:active {
+  color: #756157;
+}
+
+.navigation_link:disabled {
+  color: #E5E5E5;
+}
+
+
+.current_page {
   border-bottom: 2px solid #756157;
 }
 
 .navigation_list_icons {
   display: flex;
-  gap: 24px;
   padding: 0;
+  height: 100%;
+  align-items: center;
 }
 
 .counter {
@@ -144,9 +161,9 @@ button {
 .navigation_icon_link_count {
   position: absolute;
   z-index: 5;
-  bottom: 13px;
-  left: 10px;
-  background-color: green;
+  top: 12px;
+  left: 21px;
+  background-color: #7DB54F;
   color: white;
   font-size: 10px;
   line-height: 100%;
@@ -165,6 +182,21 @@ button {
   background-color: #756157;
   padding: 8px 34px;
   border-radius: 4px;
+  margin-left: 20px;
+}
+
+.navigation_list_icons_link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation_icons_link:not(:last-child) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 12px;
 }
 
 .navigation_icon_link_button:hover,
@@ -212,7 +244,7 @@ button {
 
 .advantages_text {
   font-size: 22px;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 
 .advantages_list {
@@ -250,9 +282,9 @@ button {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
+  max-width: 175px;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0 100px;
+  margin: 0 auto;
 }
 
 .advantages_item_text_header::after {
@@ -267,7 +299,8 @@ button {
 
 .advantages_item_text_description {
   color: #333333;
-  padding: 0 85px;
+  max-width: 230px;
+  margin: 0 auto;
 }
 
 .advantages_item_advantages_item_text {
@@ -341,8 +374,11 @@ button {
 
 .products_text {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 117%;
+  text-align: center;
   color: #333333;
+  max-width: 230px;
 }
 
 .products_icon {
@@ -354,11 +390,11 @@ button {
 
 .find_hotel_container {
   max-width: 592px;
-  margin: 0 auto;
-  padding: 96px 0;
+  margin: 96px auto;
 }
 
 .find_hotel_title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
@@ -369,6 +405,7 @@ button {
 .find_hotel_text {
   font-weight: 400;
   font-size: 22px;
+  line-height: 118%;
   text-align: center;
   color: #333333;
   margin-bottom: 54px;
@@ -377,6 +414,7 @@ button {
 .find_hotel_link {
   display: block;
   width: 376px;
+  height: 52px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 20px;
@@ -531,6 +569,7 @@ button {
   text-transform: uppercase;
   color: black;
 }
+
 .footer_phone:hover,
 .footer_phone:focus {
   color: #756157;
@@ -541,11 +580,11 @@ button {
 }
 
 .footer_logo:hover path,
-.footer_logo:focus path{
+.footer_logo:focus path {
   fill: #756157;
 }
 
-.footer_logo:active path{
+.footer_logo:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -690,8 +729,8 @@ button {
 }
 
 .hotel_form_label_checkbox:focus::before {
-    background-color: #fff;
-    border: 3px solid #83B3D3;
+  background-color: #fff;
+  border: 3px solid #83B3D3;
 }
 
 .hotel_form_label_checkbox:active {
@@ -743,7 +782,7 @@ button {
 }
 
 .radio_name:active {
-opacity: 0.3;
+  opacity: 0.3;
 }
 
 .hotel_form_item_hotel_radio:checked + .radio_name::after {
@@ -843,12 +882,13 @@ input::-webkit-inner-spin-button {
   border: none;
   color: #fff;
 }
+
 .search_reset_button:hover {
-opacity: 0.6;
+  opacity: 0.6;
 }
 
 .search_reset_button:focus {
- border: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
 }
 
 .search_reset_button:active {
@@ -988,12 +1028,13 @@ opacity: 0.6;
 .button_view_link:active {
   border: 2px solid #000000;
 }
+
 .button_view_link:focus {
   border: 2px solid #68A2CA;
 }
 
 .hotel_view_link_icon {
-  fill:#000000;
+  fill: #000000;
 
 }
 
