@@ -163,6 +163,19 @@ img {
   border-radius: 4px;
 }
 
+.navigation_icon_link_button:hover,
+.navigation_icon_link_button:focus {
+  background-color: #615048;
+}
+
+.navigation_icon_link_button:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.navigation_icon_link_button:disabled {
+  background-color: #E5E5E5;
+}
+
 /*-------- welcome text-----------*/
 
 .welcome_image {
@@ -372,8 +385,17 @@ img {
   transition: 0.3s ease opacity;
 }
 
-.find_hotel_link:hover {
-  opacity: 0.7;
+.find_hotel_link:hover,
+.find_hotel_link:focus {
+  background-color: #615048;
+}
+
+.find_hotel_link:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.find_hotel_link:disabled {
+  background-color: #E5E5E5;
 }
 
 /*-------- Subscribe-----------*/
@@ -419,6 +441,7 @@ img {
 }
 
 .subscribe_button {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
@@ -431,6 +454,16 @@ img {
   margin: 0;
   border-radius: 0 4px 4px 0;
 }
+
+.subscribe_button:hover,
+.subscribe_button:focus {
+  background-color: #68A2CA;
+}
+
+.subscribe_button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .subscribe_email_input {
   font-weight: 400;
