@@ -191,12 +191,17 @@ button {
   height: 100%;
 }
 
-.navigation_icons_link:not(:last-child) {
+.navigation_icons_link{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   padding: 0 12px;
+}
+
+.navigation_icon:hover path,
+.navigation_icon:active path {
+  fill: #615048;
 }
 
 .navigation_icon_link_button:hover,
