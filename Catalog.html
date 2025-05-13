@@ -20,13 +20,13 @@
           </a>
           <ul class="navigation_list">
             <li class="navigation_item">
-              <a href="index.html" class="navigation_link current_page">Главная</a>
+              <a href="index.html" class="navigation_link">Главная</a>
             </li>
             <li class="navigation_item">
               <a href="#" class="navigation_link">О Cедоне</a>
             </li>
             <li class="navigation_item">
-              <a href="Catalog.html" class="navigation_link">Гостиницы</a>
+              <a href="Catalog.html" class="navigation_link current_page">Гостиницы</a>
             </li>
           </ul>
         </div>
@@ -54,18 +54,18 @@
             <h1 class="sedona_hotels_title">Гостиницы Седоны</h1>
             <ul class="breadcrubs_list">
               <li class="breadcrubs_item">
-                <a href="index.html" class="home_icon_link"><svg class="home_icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="index.html" class="breadcrubs_link"><svg class="home_icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
                   <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
                   </svg></a>
               </li>
-              <li class="breadcrubs_item breadcrubs_curent_page"><a href="#" class="hotels_link">Гостиницы</a>
+              <li class="breadcrubs_item breadcrubs_curent_page"><a href="#" class="breadcrubs_link">Гостиницы</a>
               </li>
             </ul>
           </div>
 
-            <form action="https://echo.htmlacademy.ru/" method="get" class="hotel_form">
-              <div class="hotel_form_infrastructure">
+            <form action="https://echo.htmlacademy.ru/" method="get" class="hotel_form_box">
+              <div class="hotel_form infrastructure">
                 <fieldset class="hotel_form_list_item">
                   <legend class="hotel_form_item_title">Инфраструктура:</legend>
                   <ul class="hotel_form_list">
@@ -89,10 +89,10 @@
                 </fieldset>
               </div>
 
-              <div class="hotel_form_container_hotel_type">
+              <div class="hotel_form hotel_type">
 
                 <fieldset class="hotel_form_list_item">
-                  <legend class="hotel_form_item_title home_type_title">Тип жилья:</legend>
+                  <legend class="hotel_form_item_title home_type_title">Тип Жилья:</legend>
                   <ul class="hotel_form_list">
                     <li class="hotel_form_item hotel_form_radio">
                       <input type="radio" name="home_type_radio" class="hotel_form_item_hotel_radio" value="hotel"
@@ -116,7 +116,7 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="hotel_price">
+              <div class="hotel_form hotel_price">
                 <fieldset class="hotel_price_field hotel_form_list_item">
                   <legend class="hotel_price_title hotel_form_item_title">Стоимость, ₽:</legend>
                   <ul class="hotel_price_list">
@@ -133,13 +133,13 @@
                   </ul>
                   <div class="price_slider_container">
                     <input type="range" min="0" max="9000" step="100" class="price_slider lower" value="0">
-                    <input type="range" min="0" max="9000" step="100" class="price_slider higher" value="7500">
+                    <input type="range" min="0" max="9000" step="100" class="price_slider higher" value="6950">
                   </div>
                 </fieldset>
               </div>
-              <div class="Hotel_search_buttons">
-                <button type="submit" class="search_result_button blue_button">Применить</button>
-                <button type="reset" class="search_reset_button">Сбросить</button>
+              <div class="hotel_form hotel_search_buttons">
+                <button type="submit" class="hotel_search_button blue_button">Применить</button>
+                <button type="reset" class="hotel_search_button transparent_button">Сбросить</button>
               </div>
             </form>
         </div>
@@ -157,7 +157,7 @@
             </div>
             <ul class="hotel_list_vision">
               <li class="hotel_list_link">
-                <a href="catalog.html?view=tile" class="button_view_link"><svg class="hotel_view_link_icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="catalog.html?view=tile" class="button_view_link current_vision"><svg class="hotel_view_link_icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0V6H4V0Z" fill="black"/>
                   <path d="M16 0H12V6H16V0Z" fill="black"/>
                   <path d="M10 0H6V6H10V0Z" fill="black"/>
@@ -197,7 +197,7 @@
             <ul class="hotel_cards_list">
               <li class="hotel_card_item">
                 <img src="images/hotel_Amara_Resort.jpg" width="300" height="212" alt="ущелье с видом на небо">
-                <h3 class="hotel_card_item_title">Amara Resort and Spa</h3>
+                <h3 class="hotel_card_item_title">Amara Resort & Spa</h3>
                 <div class="hotel_card_item_container hotel_type">
                   <p class="hotel_card_item_type">Гостиница</p>
                   <p class="hotel_card_item_price">От 4000 ₽</p>
@@ -225,7 +225,7 @@
                 </div>
                 <div class="hotel_card_item_container buttons_about">
                   <a href="#" class="hotel_card_item_about brown_button">подробнее</a>
-                  <button type="submit" class="hotel_card_item_button blue_button">в избранное</button>
+                  <button type="submit" class="hotel_card_item_button liked_blue_button">в избранном</button>
                 </div>
                 <div class="hotel_card_item_container rating_block">
                   <div class="hotel_card_item_stars">
