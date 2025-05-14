@@ -915,19 +915,19 @@ input::-webkit-inner-spin-button {
   color: #fff;
 }
 
-.search_reset_button:hover {
+.transparent_button:hover {
   opacity: 0.6;
 }
 
-.search_reset_button:focus {
-  border: 3px solid #83B3D3;
+.transparent_button:focus {
+  box-shadow: inset 0 0 0 2px #83B3D3;
 }
 
-.search_reset_button:active {
+.transparent_button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.search_reset_button:disabled {
+.transparent_button:disabled {
   color: rgba(255, 255, 255, 0.1);
 }
 
