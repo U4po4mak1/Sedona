@@ -667,7 +667,7 @@ button {
   position: absolute;
   width: 8px;
   height: 8px;
-  top: 12px;
+  top: 11px;
   left: 20px;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
@@ -933,48 +933,41 @@ input::-webkit-inner-spin-button {
 
 
 .price_slider_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
   width: 100%;
-  margin-top: 42px;
+  margin-top: 50px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.lower {
-  appearance: none;
-  outline: none;
+.price_slider_range {
   position: absolute;
   top: 0;
-  height: 4px;
-  background-color: transparent;
-  z-index: 1;
-  width: 100%;
-}
-
-.higher {
-  appearance: none;
-  outline: none;
-  position: absolute;
-  top: 2px;
+  width: 226px;
   height: 4px;
   background-color: #fff;
-  z-index: 0;
-  width: 100%;
-  margin: 0;
 }
 
-.price_slider::-webkit-slider-thumb {
-  appearance: none;
-  width: 100%;
+.price_slider.lower {
+  position: absolute;
+  top: -8px;
+  left: 226px;
+  border: none;
+  border-radius: 5px;
   width: 20px;
   height: 20px;
-  border-radius: 4px;
   background-color: #fff;
-  cursor: grab;
-  pointer-events: auto;
-  z-index: 2;
+}
+
+.price_slider.higher {
+  position: absolute;
+  top: -8px;
+  border: none;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  margin: 0;
 }
 
 /*--------Search_result-----------*/
