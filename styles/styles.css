@@ -769,33 +769,33 @@ button {
   transform: rotate(-45deg);
 }
 
-.hotel_form_label_checkbox:hover {
+.checkbox_label:hover {
   opacity: 0.6;
 }
 
-.hotel_form_label_checkbox:focus::before {
+.checkbox_label:focus::before {
   background-color: #fff;
   border: 3px solid #83B3D3;
 }
 
-.hotel_form_label_checkbox:active {
+.checkbox_label:active {
   opacity: 0.3;
 }
 
-.hotel_form_item_hotel_radio {
+.radio_input {
   display: none;
 }
 
-.radio_name_title {
+.radio_name {
   display: block;
   padding-left: 36px;
 }
 
-.radio_name {
+.radio_label {
   position: relative;
 }
 
-.radio_name::before {
+.radio_control {
   content: '';
   position: absolute;
   width: 20px;
@@ -805,20 +805,7 @@ button {
   background-color: #fff;
 }
 
-.radio_name:hover {
-  opacity: 0.6;
-}
-
-.radio_name:focus::before {
-  background-color: #fff;
-  border: 3px solid #83B3D3;
-}
-
-.radio_name:active {
-  opacity: 0.3;
-}
-
-.hotel_form_item_hotel_radio:checked + .radio_name::after {
+.radio_input:checked + .radio_control::after {
   content: '';
   position: absolute;
   top: 5px;
@@ -827,6 +814,19 @@ button {
   height: 10px;
   border-radius: 50%;
   background-color: #3F5E72;
+}
+
+.radio_label:hover {
+  opacity: 0.6;
+}
+
+.radio_label:focus::before {
+  background-color: #fff;
+  border: 3px solid #83B3D3;
+}
+
+.radio_label:active {
+  opacity: 0.3;
 }
 
 .hotel_form_container_hotel_type {
