@@ -734,34 +734,39 @@ button {
   gap: 16px;
 }
 
-.hotel_form_item_checkbox {
+.checkbox_input {
   display: none;
 }
 
 .checkbox_name {
-  margin-left: 36px;
+  padding-left: 36px;
   white-space: nowrap;
 }
 
-.hotel_form_label_checkbox {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background-color: #fff;
-}
-
-.hotel_form_item_checkbox + .hotel_form_label_checkbox {
+.checkbox_label {
+  display: block;
   position: relative;
 }
 
-.hotel_form_label_checkbox::before {
-  content: "";
+.checkbox_control {
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 4px;
   margin: 0;
   background-color: #fff;
+}
+
+.checkbox_input:checked + .checkbox_control::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 7px;
+  top: 5px;
+  left: 5px;
+  border-bottom: 2px solid #3F5E72;
+  border-left: 2px solid #3F5E72;
+  transform: rotate(-45deg);
 }
 
 .hotel_form_label_checkbox:hover {
@@ -777,25 +782,13 @@ button {
   opacity: 0.3;
 }
 
-.hotel_form_item_checkbox:checked + .hotel_form_label_checkbox::after {
-  content: "";
-  position: absolute;
-  width: 11px;
-  height: 7px;
-  top: 5px;
-  left: 5px;
-  border-bottom: 2px solid #3F5E72;
-  border-left: 2px solid #3F5E72;
-  transform: rotate(-45deg);
-}
-
 .hotel_form_item_hotel_radio {
   display: none;
 }
 
 .radio_name_title {
   display: block;
-  margin-left: 36px;
+  padding-left: 36px;
 }
 
 .radio_name {
