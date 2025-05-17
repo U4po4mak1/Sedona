@@ -1281,6 +1281,8 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  display: none;
+
 }
 
 .find_hotel_popup {
@@ -1303,8 +1305,8 @@ input::-webkit-inner-spin-button {
 
 .popup_close_button {
   position: absolute;
-  top: 56px;
-  right: 52px;
+  top: 64px;
+  right: 54px;
   width: 52px;
   height: 52px;
   border-radius: 150px;
@@ -1355,6 +1357,11 @@ input::-webkit-inner-spin-button {
   color: #FF5757;
 }
 
+.old_people,
+.young_people {
+  display: flex;
+  align-items: center;
+}
 
 .people_number {
   display: flex;
@@ -1362,7 +1369,6 @@ input::-webkit-inner-spin-button {
 }
 
 .popup_label {
-  display: flex;
   position: relative;
   font-weight: 700;
   font-size: 20px;
@@ -1415,8 +1421,8 @@ input::-webkit-inner-spin-button {
   width: 40px;
   height: 48px;
   border: none;
-  background-color: none;
-  border-radius: 0 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .popup_input_btn_decrease::after {
@@ -1434,7 +1440,9 @@ input::-webkit-inner-spin-button {
   width: 40px;
   height: 48px;
   border: none;
-  border-radius: 0 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
 }
 
 .popup_input_btn_increase::after,
@@ -1467,7 +1475,6 @@ input::-webkit-inner-spin-button {
 
 .tooltip_element {
   position: relative;
-  content: '';
   background-color: #83B3D3;
   width: 26px;
   height: 26px;
@@ -1481,13 +1488,13 @@ input::-webkit-inner-spin-button {
   position: absolute;
   color: #ffffff;
   left: 11px;
-  top: 2px;
+  top: 1px;
   z-index: 1;
 }
 
 .young_people_tooltip_text {
   position: absolute;
-  top: 55px;
+  top: 50px;
   left: -55px;
   font-weight: 400;
   font-size: 16px;
@@ -1522,7 +1529,6 @@ input::-webkit-inner-spin-button {
 
 .popup_input {
   font-family: inherit;
-  border-radius: 4px;
   width: 31px;
   height: 48px;
   text-align: center;
@@ -1542,6 +1548,6 @@ input::-webkit-inner-spin-button {
   border: none;
   padding: 18px;
   border-radius: 10px;
-  margin: 64px auto 48px;
+  margin: 48px auto 64px;
   color: #fff;
 }
