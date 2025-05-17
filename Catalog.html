@@ -82,19 +82,16 @@
                     <li class="hotel_form_item hotel_form_checkbox">
                       <label class="checkbox_label">
                         <input type="checkbox" name="checkbox_input" class="checkbox_input">
-                        <span class="checkbox_control"></span>
                         <span class="checkbox_name">Бассейн</span></label>
                     </li>
                     <li class="hotel_form_item hotel_form_checkbox">
                       <label class="checkbox_label">
-                        <input type="checkbox" name="checkbox_input" class="checkbox_input">
-                        <span class="checkbox_control"></span>
+                        <input type="checkbox" name="checkbox_input" class="checkbox_input" disabled>
                         <span class="checkbox_name">Парковка</span></label>
                     </li>
                     <li class="hotel_form_item hotel_form_checkbox">
                       <label class="checkbox_label">
                         <input type="checkbox" name="checkbox_input" class="checkbox_input">
-                        <span class="checkbox_control"></span>
                         <span class="checkbox_name">Wi-Fi</span></label>
                     </li>
                   </ul>
@@ -108,20 +105,17 @@
                   <ul class="hotel_form_list">
                     <li class="hotel_form_item hotel_form_radio">
                       <label class="radio_label">
-                        <input type="radio" name="radio_input" class="radio_input" checked>
-                        <span class="radio_control"></span>
+                        <input type="radio" name="radio_input" class="radio_input" disabled>
                         <span class="radio_name">Гостиница</span></label>
                     </li>
                     <li class="hotel_form_item hotel_form_radio">
                       <label class="radio_label">
                         <input type="radio" name="radio_input" class="radio_input" checked>
-                        <span class="radio_control"></span>
                         <span class="radio_name">Мотель</span></label>
                     </li>
                     <li class="hotel_form_item hotel_form_radio">
                       <label class="radio_label">
                         <input type="radio" name="radio_input" class="radio_input" checked>
-                        <span class="radio_control"></span>
                         <span class="radio_name">Апартаменты</span></label>
                     </li>
 
@@ -134,19 +128,19 @@
                   <ul class="hotel_price_list">
                     <li class="hotel_minimal_price_item">
                       <label for="price_min"></label>
-                      <input type="number" name="price_min" id="price_min" value="0"
+                      <input type="number" name="price_min" id="price_min" value="0" placeholder="Цена"
                         class="price_input minimal_price"><span class="input_text input_min">от</span>
                     </li>
                     <li class="hotel_maximal_price_item">
                       <label for="price_max"></label>
-                      <input type="number" name="price_max" id="price_max" max="9000" value="9000"
+                      <input type="number" name="price_max" id="price_max" placeholder="Цена" value="9000"
                         class="price_input maximal_price"><span class="input_text input_max">до</span>
                     </li>
                   </ul>
                   <div class="price_slider_container">
                     <div class="price_slider_range">
-                      <button type="button" class="price_slider lower"></button>
-                      <button type="button" class="price_slider higher"></button>
+                      <button type="button" class="price_slider lower">  <span class="min_price_btn visually_hidden">Изменить минимальную цену</span></button>
+                      <button type="button" class="price_slider higher"><span class="max_price_btn visually_hidden">Изменить минимальную цену</span></button>
                     </div>
                   </div>
                 </fieldset>

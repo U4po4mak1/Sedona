@@ -76,7 +76,7 @@
                 </p>
               </div>
               <div class="advantages_item_long_image">
-                <img src="images/real_town.jpg" alt="Реальный город, с домами и флагами">
+                <img src="images/real_town.jpg" width="800" height="385" alt="Реальный город, с домами и флагами">
               </div>
             </li>
             <li class="advantages_item advantages_item_text">
@@ -97,7 +97,7 @@
                 <p class="advantages_item_text_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <div class="advantages_item_long_image">
-                <img src="images/devils_bridge.jpg" alt="Мост в горах, называется мост дьявола">
+                <img src="images/devils_bridge.jpg" width="800" height="385" alt="Мост в горах, называется мост дьявола">
               </div>
             </li>
           </ul>
@@ -144,7 +144,8 @@
               <p class="subscribe_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form class="subscribe_form_item" action="https://echo.htmlacademy.ru/" method="post">
                 <input type="email" name="subscribe_mail" placeholder="Ваш e-mail" class="subscribe_email_input">
-                <button type="submit" class="subscribe_button blue_button">Подписаться</button>
+                <button type="submit" class="subscribe_button blue_button">Подписаться
+                </button>
               </form>
             </div>
           </div>
@@ -162,8 +163,7 @@
             </li>
             <li class="footer_item">
               <a href="#" class="footer_icon_link"><svg class="footer_icon" fill="currentColor" aria-hidden="true"
-                  focusable="false" width="19" height="17" viewBox="0 0 18 16"
-                  xmlns="http://www.w3.org/2000/svg">
+                  focusable="false" width="19" height="17" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16.785 0.955705L0.840489 7.1042C-0.247661 7.54126 -0.241365 8.14828 0.640845 8.41897L4.73445 9.69597L14.2058 3.72014C14.6537 3.44766 15.0629 3.59424 14.7265 3.89281L7.05283 10.8183H7.05103L7.05283 10.8192L6.77045 15.0387C7.18413 15.0387 7.36669 14.8489 7.59871 14.625L9.58705 12.6915L13.7229 15.7464C14.4855 16.1664 15.0332 15.9506 15.2229 15.0405L17.9379 2.2453C18.2158 1.13107 17.5126 0.626562 16.785 0.955705Z"
                     fill="#83B3D3" />
@@ -195,14 +195,16 @@
               <div class="popup_item">
                 <label class="popup_arrived_label popup_label">
                   Дата Заезда:
-                  <input type="text" class="popup_arrived_input" placeholder="Укажите дату" value="27 апреля 2020" required>
+                  <input type="text" class="popup_arrived_input" placeholder="Укажите дату" value="27 апреля 2020"
+                    required>
                 </label>
                 <p class="popup_date_result arrived_text">Мы не можем отправить вас в прошлое.</p>
               </div>
               <div class="popup_item">
                 <label class="popup_exit_label popup_label">
                   Дата Выезда:
-                  <input type="text" class="popup_exit_input" placeholder="Укажите дату" value="1 сентября 2023" required>
+                  <input type="text" class="popup_exit_input" placeholder="Укажите дату" value="1 сентября 2023"
+                    required>
                 </label>
                 <p class="popup_date_result exit_text">На эти даты есть свободные номера. Пока есть.</p>
               </div>
@@ -210,21 +212,22 @@
                 <div class="people_number">
                   <div class="old_people">
                     <label for="old_input" class="old_people_label popup_label">
-                      <span class="old_people_title">Взрослые:</span>
-                      </label>
-                      <button type="button" class="popup_input_btn_decrease"></button>
-                      <input id="old_input" type="number" class="old_people popup_input" value="2">
-                      <button type="button" class="popup_input_btn_increase"></button>
+                      Взрослые: </label>
+                    <button type="button" class="popup_input_btn_decrease"></button>
+                    <input id="old_input" type="number" class="old_people popup_input" value="2">
+                    <button type="button" class="popup_input_btn_increase"></button>
 
                   </div>
                   <div class="young_people">
                     <label for="young_input" class="young_people_label popup_label">
-                      <span class="yong_people_title">Дети:</span><span class="tooltip_element"></span><span
-                        class="young_people_tooltip_text">Укажите количество детей, которые будут с вами,
-                        возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span></label>
-                        <button type="button" class="popup_input_btn_decrease"></button>
-                      <input id="young_input" type="number" class="young_people popup_input" value="2">
-                      <button type="button" class="popup_input_btn_increase"></button>
+                      Дети:
+                      <span class="tooltip_element"></span>
+                      <span class="young_people_tooltip_text">Укажите количество детей, которые будут с вами,
+                        возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </label>
+                    <button type="button" class="popup_input_btn_decrease"></button>
+                    <input id="young_input" type="number" class="young_people popup_input" value="2">
+                    <button type="button" class="popup_input_btn_increase"></button>
 
                   </div>
                 </div>
