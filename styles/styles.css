@@ -859,6 +859,8 @@ button {
 }
 
 .price_input {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -867,16 +869,17 @@ button {
   height: 48px;
 }
 
+.price_input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
 .price_input::placeholder {
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
-}
-
-.price_input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
 }
 
 .minimal_price {
