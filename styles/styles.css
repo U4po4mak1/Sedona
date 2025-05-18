@@ -57,7 +57,18 @@ button {
 }
 
 .visually_hidden {
-  display: none;
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+
 }
 
 /*-------- HEADER-----------*/
@@ -1150,8 +1161,23 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel_card_item_stars {
-  display: flex;
-  gap: 6px;
+  width: 140px;
+  min-height: 37px;
+  background-image: url('../images/Icons/stars.svg');
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.four_stars {
+  background-position: -24px;
+}
+
+.three_stars {
+  background-position: -48px;
+}
+
+.two_stars {
+  background-position: -72px;
 }
 
 .rating_star_image {
