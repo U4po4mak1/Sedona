@@ -1139,6 +1139,8 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .hotel_card_item_about {
@@ -1149,7 +1151,6 @@ input::-webkit-inner-spin-button {
   background-color: #756157;
   border-radius: 4px;
   width: 140px;
-  height: 36px;
   color: #fff;
 }
 
@@ -1161,7 +1162,6 @@ input::-webkit-inner-spin-button {
   padding: 8px 15px;
   border-radius: 4px;
   width: 140px;
-  height: 36px;
   color: #fff;
   border: none;
 }
@@ -1197,7 +1197,6 @@ input::-webkit-inner-spin-button {
   text-transform: uppercase;
   border-radius: 4px;
   width: 140px;
-  height: 37px;
   background-color: #F2F2F2;
   padding: 9px 22px 8px 23px;
 }
@@ -1239,7 +1238,7 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   line-height: 180%;
   width: 60px;
-  height: 60px;
+  padding: 12px 0;
   text-transform: uppercase;
   color: #fff;
 }
