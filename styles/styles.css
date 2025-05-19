@@ -85,19 +85,18 @@ button {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.menu {
-  height: 64px;
-}
-
 .navigation_logo {
   margin-right: 28px;
+}
 
+.navigation_top_logo {
+  margin-bottom: -10px;
 }
 
 .navigation {
 
   max-width: 1060px;
-  height: 64px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,14 +114,13 @@ button {
 .navigation_text_links {
   display: flex;
   align-items: flex-start;
-  height: 64px;
-
 }
 
 .navigation_list {
   display: flex;
   align-self: stretch;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .navigation_item {
@@ -143,12 +141,13 @@ button {
 .navigation_link:hover,
 .navigation_link:active {
   color: #756157;
+  border-bottom: 2px solid #e4dbd7;
+  padding-top: 2px;
 }
 
 .navigation_link:disabled {
   color: #E5E5E5;
 }
-
 
 .current_page {
   border-bottom: 2px solid #756157;
@@ -157,6 +156,7 @@ button {
 
 .navigation_list_icons {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   height: 100%;
   align-items: center;
@@ -169,7 +169,7 @@ button {
 .navigation_icon_link_count {
   position: absolute;
   z-index: 5;
-  top: 11px;
+  top: -11px;
   left: 19px;
   background-color: #7DB54F;
   color: white;
@@ -190,7 +190,9 @@ button {
   background-color: #756157;
   padding: 8px 34px;
   border-radius: 4px;
-  margin-left: 22px;
+  margin: 10px 22px;
+  margin-right: 0;
+  min-width: 160px;
 }
 
 .navigation_list_icons_link {
@@ -203,6 +205,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   height: 100%;
   padding: 0 12px;
 }
@@ -228,8 +231,6 @@ button {
 /*-------- welcome text-----------*/
 
 .welcome_image {
-  display: flex;
-  justify-content: center;
   background: url("../images/index_background.jpg") no-repeat;
   min-width: 1200px;
   background-size: cover;
@@ -237,6 +238,7 @@ button {
 }
 
 .welcome_sedona_text {
+  margin: auto;
   padding-top: 50px;
   padding-bottom: 82px;
 }
@@ -364,7 +366,8 @@ button {
 
 .products_list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -401,6 +404,7 @@ button {
 .products_icon {
   width: 75px;
   height: 72px;
+  object-fit: contain;
 }
 
 /*-------- Find Hotel-----------*/
@@ -493,11 +497,6 @@ button {
   width: 70%;
 }
 
-.subscribe_form_item {
-  display: flex;
-  margin-bottom: 104px;
-}
-
 .subscribe_button {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
@@ -541,7 +540,7 @@ button {
   line-height: 133%;
   color: black;
   border-radius: 4px 0 0 4px;
-  padding: 12px 20px;
+  padding: 15px 20px;
   border: none;
   flex-grow: 1;
   margin: 0;
@@ -1151,6 +1150,7 @@ input::-webkit-inner-spin-button {
   background-color: #756157;
   border-radius: 4px;
   width: 140px;
+  height: 100%;
   color: #fff;
 }
 
@@ -1162,6 +1162,7 @@ input::-webkit-inner-spin-button {
   padding: 8px 15px;
   border-radius: 4px;
   width: 140px;
+  height: 100%;
   color: #fff;
   border: none;
 }
@@ -1265,7 +1266,6 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   padding-top: 96px;
-  margin-bottom: 104px;
 }
 
 .subscribe_block_container {
@@ -1295,6 +1295,7 @@ input::-webkit-inner-spin-button {
 
 .subscribe_form_item {
   display: flex;
+  margin-bottom: 104px;
 }
 
 .catalog_subscribe_button {
@@ -1316,8 +1317,8 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.6);
   border-radius: 4px 0 0 4px;
-  padding: 12px 20px 11px 20px;
-  height: 52px;
+  padding: 15px 20px;
+  height: 100%;
   width: 452px;
   border: none;
   flex-grow: 1;
