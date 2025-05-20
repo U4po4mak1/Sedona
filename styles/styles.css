@@ -90,6 +90,7 @@ button {
 }
 
 .navigation_top_logo {
+  max-width: 140px;
   margin-bottom: -10px;
 }
 
@@ -113,12 +114,11 @@ button {
 
 .navigation_text_links {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .navigation_list {
   display: flex;
-  align-self: stretch;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -552,6 +552,7 @@ button {
 .footer_list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1060px;
   margin: 0 auto;
   align-items: center;
@@ -618,6 +619,7 @@ button {
 /*-------- Catalog. Hotel_search-----------*/
 
 .sedona_hotels_search {
+  background-color: #3F5E72;
   background-image: url("../images/background_filter_catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -906,6 +908,7 @@ input::-webkit-inner-spin-button {
 .maximal_price {
   border-radius: 0 4px 4px 0;
   border: 0;
+  margin-right: 10px;
   margin-left: 2px;
 }
 
@@ -1219,6 +1222,7 @@ input::-webkit-inner-spin-button {
 
 .pagination_list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
